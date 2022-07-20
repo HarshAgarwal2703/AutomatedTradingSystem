@@ -1,14 +1,6 @@
 # AutomatedTradingSystem
 Stock market provides a platform for people to buy and sell shares for profit. However, stock market is highly volatile and no human can rightly predict the direction of stock market, which may lead to high losses for investors. The paper proposes a system which removes the limitations of the existing systems with the help of different machine learning modules.
 
-# Introduction
-Stock market provides a platform for people to buy and sell shares
-for profit. However, stock market is highly volatile and no human
-can rightly predict the direction of stock market, which may lead to
-high losses for investors. The paper proposes a system which
-removes the limitations of the existing systems with the help of
-different machine learning modules.
-
 # Objective(s)
 To develop a client-adaptive automated stock trading system that
 uses filters in the initial stage to narrow down scope of the stocks,
