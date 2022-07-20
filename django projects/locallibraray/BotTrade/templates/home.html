@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .button {
+          background-color: #1c87c9;
+          border: none;
+          color: white;
+          padding: 20px 34px;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+          font-size: 20px;
+          margin: 4px 2px;
+          cursor: pointer;
+        }
+      </style>
+</head>
+<body>
+    <a class="button" href="{% url 'startScript-url' %}">Start!</a>
+    <button type="button" href="{% url 'stopScript-url' %}" >Stop!</button>
+    {% if type == "Login" %}
+      <h1>Login Successfull</h1>
+    {% elif type == "resgister" %}
+      <h5>Register Successfull</h5>
+    {% endif %}
+</body>
+</html>

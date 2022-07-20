@@ -1,0 +1,196 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<!-- {% static ''%} -->
+<head>
+    <title>Make Money!</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="Admin template that can be used to build dashboards for CRM, CMS, etc.">
+    <meta name="author" content="Potenza Global Solutions">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- app favicon -->
+    <link rel="shortcut icon" href="{% static 'assets\img\favicon.ico'%}">
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <!-- plugin stylesheets -->
+    <link rel="stylesheet" type="text/css" href="{% static 'assets\css\vendors.css'%}">
+    <!-- app style -->
+    <link rel="stylesheet" type="text/css" href="{% static 'assets\css\style.css'%}">
+</head>
+<!-- {% static ''%} -->
+<body>
+
+    <h3>Hello {{ name }}</h3>
+    <!-- begin app -->
+                    <!-- begin container-fluid -->
+                    <div class="container-fluid">
+                        <!-- begin row -->
+                        <div class="row">
+                            <div class="col-md-12 m-b-30">
+                                <!-- begin page title -->
+                                <div class="d-block d-sm-flex flex-nowrap align-items-center">
+                                    <div class="page-title mb-2 mb-sm-0">
+                                        <h1>Auto Numeric</h1>
+                                    </div>
+                                    <div class="ml-auto d-flex align-items-center">
+                                        <nav>
+                                            <ol class="breadcrumb p-0 m-b-0">
+                                                <li class="breadcrumb-item">
+                                                    <a href="index.html"><i class="ti ti-home"></i></a>
+                                                </li>
+                                                <li class="breadcrumb-item">
+                                                    Forms
+                                                </li>
+                                                <li class="breadcrumb-item active text-primary" aria-current="page">Auto Numeric</li>
+                                            </ol>
+                                        </nav>
+                                    </div>
+                                </div>
+                                <!-- end page title -->
+                            </div>
+                        </div>
+                        <!-- end row -->
+                        <!-- begin row -->
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="card card-statistics">
+                                    <div class="card-header">
+                                        <div class="card-heading">
+                                            <h4 class="card-title">Auto Numeric</h4>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <form>
+                                            
+                                            <div class="form-group row">
+                                                <label class="col-sm-2 col-form-label">Integer</label>
+                                                <div class="col-sm-10">
+                                                    <input type="text" placeholder="" id="integer" class="form-control autonumber">
+                                                    <span class="font-14 text-muted">e.g. "1,111,111,111,111"</span>
+                                                </div>
+                                            </div>
+                                            <div class="form-group row">
+                                                <label class="col-sm-2 col-form-label">Positive integer</label>
+                                                <div class="col-sm-10">
+                                                    <input type="text" placeholder="" id="integerPos" class="form-control autonumber">
+                                                    <span class="font-14 text-muted">e.g. "1,111,111,111,111"</span>
+                                                </div>
+                                            </div>
+                                            <div class="form-group row">
+                                                <label class="col-sm-2 col-form-label">Negative integer</label>
+                                                <div class="col-sm-10">
+                                                    <input type="text" placeholder="" id="integerNeg" class="form-control autonumber">
+                                                    <span class="font-14 text-muted">e.g. "-1,111,111,111,111"</span>
+                                                </div>
+                                            </div>
+                                            <div class="form-group row">
+                                                <label class="col-sm-2 col-form-label">Float</label>
+                                                <div class="col-sm-10">
+                                                    <input type="text" placeholder="" id="float" class="form-control autonumber">
+                                                    <span class="font-14 text-muted">e.g. "1,111,111,111,111"</span>
+                                                </div>
+                                            </div>
+                                            <div class="form-group row">
+                                                <label class="col-sm-2 col-form-label">Positive float</label>
+                                                <div class="col-sm-10">
+                                                    <input type="text" placeholder="" id="floatPos" class="form-control autonumber">
+                                                    <span class="font-14 text-muted">e.g. "1,111,111,111,111"</span>
+                                                </div>
+                                            </div>
+                                            <div class="form-group row">
+                                                <label class="col-sm-2 col-form-label">Negative float</label>
+                                                <div class="col-sm-10">
+                                                    <input type="text" placeholder="" id="floatNeg" class="form-control autonumber">
+                                                    <span class="font-14 text-muted">e.g. "-1,111,111,111,111"</span>
+                                                </div>
+                                            </div>
+                                            <div class="form-group row">
+                                                <label class="col-sm-2 col-form-label">Numeric</label>
+                                                <div class="col-sm-10">
+                                                    <input type="text" placeholder="" id="numeric" class="form-control autonumber">
+                                                    <span class="font-14 text-muted">e.g. "1111111111111"</span>
+                                                </div>
+                                            </div>
+                                            <div class="form-group row">
+                                                <label class="col-sm-2 col-form-label">Positive numeric</label>
+                                                <div class="col-sm-10">
+                                                    <input type="text" placeholder="" id="numericPos" class="form-control autonumber">
+                                                    <span class="font-14 text-muted">e.g. "1222222222222"</span>
+                                                </div>
+                                            </div>
+                                            <div class="form-group row">
+                                                <label class="col-sm-2 col-form-label">Negative numeric</label>
+                                                <div class="col-sm-10">
+                                                    <input type="text" placeholder="" id="numericNeg" class="form-control autonumber">
+                                                    <span class="font-14 text-muted">e.g. "-1111111111111"</span>
+                                                </div>
+                                            </div>
+                                           
+                                        </form>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <div class="card card-statistics">
+                                            <div class="card-header">
+                                                <div class="card-heading">
+                                                    <h4 class="card-title">Success</h4>
+                                                </div>
+                                            </div>
+                                            <div class="card-body">
+                                                <p class="text-muted mb-2"><b>Default Checked</b></p>
+                                                <div class="form-group">
+                                                    <div class="checkbox checbox-switch switch-success">
+                                                        <label>
+                                                            <input type="checkbox" name="switch8" checked="">
+                                                            <span></span>
+                                                            Checkbox Label
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <p class="text-muted mb-2"><b>Default Unchecked</b></p>
+                                                <div class="form-group">
+                                                    <div class="checkbox checbox-switch switch-success">
+                                                        <label>
+                                                            <input type="checkbox" name="switch9">
+                                                            <span></span>
+                                                            Checkbox Label
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <p class="text-muted mb-2"><b>Default Disabled</b></p>
+                                                <div class="form-group">
+                                                    <label class="checkbox-inline checbox-switch switch-success">
+                                                        <input type="checkbox" name="switch10" disabled="" checked="">
+                                                        <span></span>
+                                                        Checkbox Label
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end row -->
+                    </div>
+                    <!-- end container-fluid -->
+                </div>
+                <!-- end app-main -->
+            </div>
+            <!-- end app-container -->
+            <!-- begin footer -->
+<!-- {% static ''%} -->        
+            <!-- end footer -->
+        </div>
+        <!-- end app-wrap -->
+    </div>
+    <!-- end app -->
+
+    <!-- plugins -->
+    <script src="{% static 'assets\js\vendors.js'%}"></script>
+
+    <!-- custom app -->
+    <script src="{% static 'assets\js\app.js'%}"></script>
+</body>
+
+</html>
